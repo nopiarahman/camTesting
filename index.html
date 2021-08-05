@@ -23,7 +23,7 @@
             <label for="capture">Capture Media</label>
             
             <input type="file" 
-            id="capture" 
+            id="capture"  class="openf"
             accept="image/*,video/*,audio/*" 
             capture 
             multiple />
@@ -40,7 +40,9 @@
         </p>
     </main>    
     <script>
-        
+        $('.openf').click(function(e){
+              e.preventDefault();
+        });
         document.addEventListener('DOMContentLoaded', (ev)=>{
             let form = document.getElementById('myform');
             //get the captured media file
