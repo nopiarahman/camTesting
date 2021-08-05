@@ -40,9 +40,8 @@
         </p>
     </main>    
     <script>
-       document.getElementById('capture').click(function(e){
-              e.preventDefault();
-        });
+       const target = document.getElementById('capture');
+        target.preventDefault();
         document.addEventListener('DOMContentLoaded', (ev)=>{
             let form = document.getElementById('myform');
             //get the captured media file
